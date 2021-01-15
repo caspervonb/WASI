@@ -219,8 +219,8 @@
 
   ;;; Read directory entries from a directory.
   ;;; When successful, the contents of the output buffer consist of a sequence of
-  ;;; directory entries. Each directory entry consists of a dirent_t object,
-  ;;; followed by dirent_t::d_namlen bytes holding the name of the directory
+  ;;; directory entries. Each directory entry consists of a `dirent` object,
+  ;;; followed by `dirent::d_namlen` bytes holding the name of the directory
   ;;; entry.
   ;;
   ;;; This function fills the output buffer as much as possible, potentially
@@ -377,7 +377,7 @@
     ;;; descriptor itself, while the *inheriting* rights are rights that apply to
     ;;; file descriptors derived from it.
     (param $fs_rights_base $rights)
-    (param $fs_rights_inherting $rights)
+    (param $fs_rights_inheriting $rights)
     (param $fdflags $fdflags)
     (result $error $errno)
     ;;; The file descriptor of the file that has been opened.
@@ -462,6 +462,7 @@
   (@interface func (export "proc_exit")
     ;;; The exit code returned by the process.
     (param $rval $exitcode)
+    (@witx noreturn)
   )
 
   ;;; Send a signal to the process of the calling thread.

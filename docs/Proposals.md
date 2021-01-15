@@ -32,6 +32,7 @@ Proposals follow [this process document](https://github.com/WebAssembly/WASI/blo
 | [Clocks][wasi-clocks]                                                          | Dan Gohman                             |
 | [Random][wasi-random]                                                          | Dan Gohman                             |
 | [Misc][wasi-misc]                                                              | Dan Gohman                             |
+| [Machine Learning (wasi-nn)][wasi-nn]                                          | Andrew Brown and Mingqiu Sun           |
 
 ### Phase 1 - Feature Proposal (CG)
 
@@ -49,11 +50,12 @@ Proposals follow [this process document](https://github.com/WebAssembly/WASI/blo
 
 Please see [Contributing to WebAssembly](https://github.com/WebAssembly/WASI/blob/master/Contributing.md) for the most up-to-date information on contributing proposals to standard.
 
-[wasi-io]: https://github.com/WebAssembly/WASI/phases
-[filesystem]: https://github.com/WebAssembly/WASI/phases
-[wasi-command-line]: https://github.com/WebAssembly/WASI/phases
-[clocks]: https://github.com/WebAssembly/WASI/phases
-[random]: https://github.com/WebAssembly/WASI/phases
-[misc]: https://github.com/WebAssembly/WASI/phases
-[wasi-crypto]: https://github.com/WebAssembly/WASI-crypto
-[wasi-proxy-wasm]: https://github.com/WebAssembly/WASI
+[wasi-clocks]: https://github.com/WebAssembly/wasi-clocks
+[wasi-command-line]: https://github.com/WebAssembly/wasi-classic-command
+[wasi-crypto]: https://github.com/WebAssembly/wasi-crypto
+[wasi-filesystem]: https://github.com/WebAssembly/wasi-filesystem
+[wasi-io]: https://github.com/WebAssembly/wasi-io
+[wasi-misc]: https://github.com/WebAssembly/wasi-misc
+[wasi-nn]: https://github.com/WebAssembly/wasi-nn
+[wasi-proxy-wasm]: https://github.com/proxy-wasm/spec
+[wasi-random]: https://github.com/WebAssembly/wasi-random
